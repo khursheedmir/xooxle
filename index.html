@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xooxle Search Engine</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Logo and Search Bar Section -->
+    <div id="header">
+        <img src="xooxle_logo.png" alt="Xooxle" />
+        <h1>Xooxle Search Engine</h1>
+    </div>
+
+    <!-- Authentication Section -->
+    <div id="authSection">
+        <h2>Sign Up / Login</h2>
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <br>
+        <button onclick="signUp()">Sign Up</button>
+        <button onclick="signIn()">Login</button>
+        <button onclick="googleSignIn()">Login with Google</button>
+        <button onclick="signOut()">Logout</button>
+        <p id="userDisplay"></p>
+    </div>
+
+    <!-- Search Section -->
+    <div id="searchSection" style="display: none;">
+        <h2>Search the Web</h2>
+        <input type="text" id="searchBox" placeholder="Search..." />
+        <button onclick="submitSearch()">Search</button>
+        <div id="results"></div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
